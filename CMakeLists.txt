@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project(hackerrank_dsa)
+
+add_executable(sorting_runningMedian sorting_runningMedian.cpp)
+add_executable(sorting_mergeSortCountingInversions sorting_mergeSortCountingInversions.cpp)
