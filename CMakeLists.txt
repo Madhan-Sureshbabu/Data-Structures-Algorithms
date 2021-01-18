@@ -5,3 +5,5 @@ add_executable(sorting_runningMedian sorting_runningMedian.cpp)
 add_executable(sorting_mergeSortCountingInversions sorting_mergeSortCountingInversions.cpp)
 add_executable(stringManip_anagramDel stringManip_anagramDeletion.cpp)
 add_executable(stringManip_alternateChar stringManip_alternatingCharacters.cpp) 
+
+add_executable(maxNumOfKSumPairs maxNumOfKSumPairs.cpp) 

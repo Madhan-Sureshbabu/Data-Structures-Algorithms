@@ -2,28 +2,23 @@
 typedef long long int ll;
 using namespace std;
 
-void merge(ll arr[],ll temp[],ll leftStart,ll rightEnd, ll &inversionCount)
+void merge(ll arr[],ll temp[],ll leftStart,ll middle ,ll rightEnd, ll &inversionCount)
 {
-	ll leftEnd = (leftStart + rightEnd)/2;
-	ll rightStart = leftEnd + 1;
-	ll left=leftStart, right=rightStart;
+	ll left=leftStart, right=middle+1;
 	ll index=leftStart;
-	while (left <= leftEnd && right <= rightEnd)
+	while (left <= middle && right <= rightEnd)
 	{
 		if (arr[left] <= arr[right])
 		{
-			temp[index]=arr[left];
-			left++;
+			temp[index++]=arr[left++];
 		}
 		else
 		{
-			temp[index]=arr[right];
-			right++;
-			inversionCount+=right-index;
+			temp[index++]=arr[right++];
+			inversionCount+=(middle-leftStart+1-(left-leftStart));
 		}
-		index++;
 	}
-	while (left<=leftEnd)
+	while (left<=middle)
 	{
 		temp[index]=arr[left];
 		left++; index++;
@@ -35,24 +30,31 @@ void merge(ll arr[],ll temp[],ll leftStart,ll rightEnd, ll &inversionCount)
 	}
 }
 
+void assign(ll arr[], ll temp[], ll start, ll end)
+{
+	for (ll i=start; i<end; i++)
+		arr[i] = temp[i];
+}
+
 void mergeSort(ll arr[],ll temp[],ll leftStart,ll rightEnd, ll &inversionCount)
 {
-	ll middle = (leftStart + rightEnd)/2;
-	if (leftStart<middle)
+	if (leftStart<rightEnd)
 	{
+		ll middle = (leftStart + rightEnd)/2;
 		mergeSort(arr,temp,leftStart,middle,inversionCount);
 		mergeSort(arr,temp,middle+1,rightEnd,inversionCount);
+		assign(arr,temp,leftStart,rightEnd);
+		merge(arr,temp,leftStart,middle,rightEnd,inversionCount);
 	}
-	merge(arr,temp,leftStart,rightEnd,inversionCount);
 }
 
 ll countInversions(ll arr[],ll n)
 {
 	ll temp[n];
+	for (int i=0; i<n; i++)
+		temp[i] = arr[i];
 	ll inversionCount=0;
 	mergeSort(arr,temp,0,n-1,inversionCount);
-	for (ll i=0;i<n;i++)
-		cout<<temp[i]<<" ";
 	return inversionCount;
 }
 
@@ -61,13 +63,19 @@ ll countInversions(ll arr[],ll n)
 int main()
 {
 	ll d,n,i,j,arr[100000],cnt;
-	// cin>>d;
-	cin>>n;
-	for (j=0;j<n;j++)
+	vector<int> count;
+	cin>>d;
+	for (i=0; i<d; i++)
 	{
-		cin>>arr[j];
+		cin>>n;
+		for (j=0;j<n;j++)
+		{
+			cin>>arr[j];
+		}
+		count.push_back(countInversions(arr,n));
 	}
-	cnt = countInversions(arr,n);
-	cout << endl << "inversionCount : " << cnt << endl;
+	for (i=0; i<count.size(); i++)
+		cout<<count[i]<<endl;
 	return 0;
 }
+
