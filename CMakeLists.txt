@@ -7,3 +7,4 @@ add_executable(stringManip_anagramDel stringManip_anagramDeletion.cpp)
 add_executable(stringManip_alternateChar stringManip_alternatingCharacters.cpp) 
 
 add_executable(maxNumOfKSumPairs maxNumOfKSumPairs.cpp) 
+add_executable(validParanthesis validParanthesis.cpp)
