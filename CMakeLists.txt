@@ -8,3 +8,11 @@ add_executable(stringManip_alternateChar stringManip_alternatingCharacters.cpp)
 
 add_executable(maxNumOfKSumPairs maxNumOfKSumPairs.cpp) 
 add_executable(validParanthesis validParanthesis.cpp)
+add_executable(getMaxInGenArray getMaxInGenArray.cpp)
+
+add_executable(xorOp xorOp.cpp)
+add_executable(avgSalary avgSalary.cpp)
+add_executable(numBottles numBottles.cpp)
+add_executable(alienDictionary alienDictionary.cpp)
+add_executable(validPerfectSqr validPerfectSqr.cpp)
+add_executable(zigzagConversion zigzagConversion.cpp)
