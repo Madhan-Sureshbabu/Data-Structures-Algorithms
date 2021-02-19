@@ -8,14 +8,14 @@ string convert(string s, int numRows)
     int j=0,direction=1;
     for (int i=0;i<numRows;i++)
 	    pattern.push_back(p);
+	if (numRows==1)
+		direction=0;
 	for (size_t i=0; i<s.length(); i++)
 	{
 		pattern[j].push_back(s[i]);
 		j+=direction;
-		if (j==numRows-1)
-			direction=-1;
-		else if (j==0)
-			direction=1;
+		if (j==numRows-1 || j==0)
+			direction*=-1;
 	}
 	stringstream ss;
 	for (int i=0; i<numRows; i++)
@@ -28,8 +28,9 @@ string convert(string s, int numRows)
 
 int main()
 {
-	string s = "PAYPALISHIRING";
-	int numRows = 3;
+	// string s = "PAYPALISHIRING";
+	string s="AB";
+	int numRows = 1;
 	cout<<convert(s,numRows)<<endl;
 	return 0;
 }

@@ -8,11 +8,19 @@ add_executable(stringManip_alternateChar stringManip_alternatingCharacters.cpp)
 
 add_executable(maxNumOfKSumPairs maxNumOfKSumPairs.cpp) 
 add_executable(validParanthesis validParanthesis.cpp)
-add_executable(getMaxInGenArray getMaxInGenArray.cpp)
+add_executable(getMaxInGenArray 1646_getMaxInGenArray.cpp)
 
-add_executable(xorOp xorOp.cpp)
-add_executable(avgSalary avgSalary.cpp)
-add_executable(numBottles numBottles.cpp)
-add_executable(alienDictionary alienDictionary.cpp)
-add_executable(validPerfectSqr validPerfectSqr.cpp)
-add_executable(zigzagConversion zigzagConversion.cpp)
+add_executable(xorOp 1486_xorOp.cpp)
+add_executable(avgSalary 1491_avgSalary.cpp)
+add_executable(numBottles 1518_numBottles.cpp)
+add_executable(alienDictionary 953_alienDictionary.cpp)
+add_executable(validPerfectSqr 367_validPerfectSqr.cpp)
+add_executable(zigzagConversion 6_zigzagConversion.cpp)
+
+add_executable(141_linkedListCycle 141_linkedListCycle.cpp)
+add_executable(155_minStack 155_minStack.cpp)
+add_executable(169_majorityElement 169_majorityElement.cpp)
+add_executable(202_happyNum 202_happyNum.cpp)
+add_executable(204_count_primes 204_count_primes.cpp)
+
+
