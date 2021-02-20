@@ -29,4 +29,8 @@ add_executable(88_mergeSortedArray 88_mergeSortedArray.cpp)
 add_executable(108_sortedArrayToBinarySearchTree 108_sortedArrayToBinarySearchTree.cpp)
 add_executable(189_rotateArray 189_rotateArray.cpp)
 
+add_executable(205_isomorphicStrings 205_isomorphicStrings.cpp)
+add_executable(226_invertBinaryTree 226_invertBinaryTree.cpp)
+add_executable(226_invertBinaryTreeIterativeSol 226_invertBinaryTreeIterativeSol.cpp)
+add_executable(448_findDisappearedNums 448_findDisappearedNums.cpp)
 
