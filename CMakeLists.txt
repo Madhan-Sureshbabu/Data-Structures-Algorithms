@@ -23,4 +23,10 @@ add_executable(169_majorityElement 169_majorityElement.cpp)
 add_executable(202_happyNum 202_happyNum.cpp)
 add_executable(204_count_primes 204_count_primes.cpp)
 
+add_executable(242_validAnagrams 242_validAnagrams.cpp)
+add_executable(371_sumWithoutPlus 371_sumWithoutPlus.cpp)
+add_executable(88_mergeSortedArray 88_mergeSortedArray.cpp)
+add_executable(108_sortedArrayToBinarySearchTree 108_sortedArrayToBinarySearchTree.cpp)
+add_executable(189_rotateArray 189_rotateArray.cpp)
+
 
