@@ -33,4 +33,8 @@ add_executable(205_isomorphicStrings 205_isomorphicStrings.cpp)
 add_executable(226_invertBinaryTree 226_invertBinaryTree.cpp)
 add_executable(226_invertBinaryTreeIterativeSol 226_invertBinaryTreeIterativeSol.cpp)
 add_executable(448_findDisappearedNums 448_findDisappearedNums.cpp)
+add_executable(572_subtreeOfAnotherTree 572_subtreeOfAnotherTree.cpp)
+add_executable(556_reverseWordsInAString 556_reverseWordsInAString.cpp)
+
+
 
