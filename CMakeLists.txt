@@ -34,7 +34,23 @@ add_executable(226_invertBinaryTree 226_invertBinaryTree.cpp)
 add_executable(226_invertBinaryTreeIterativeSol 226_invertBinaryTreeIterativeSol.cpp)
 add_executable(448_findDisappearedNums 448_findDisappearedNums.cpp)
 add_executable(572_subtreeOfAnotherTree 572_subtreeOfAnotherTree.cpp)
+add_executable(572_subtreeOfAnotherTreeElegantSol 572_subtreeOfAnotherTreeElegantSol.cpp)
 add_executable(556_reverseWordsInAString 556_reverseWordsInAString.cpp)
+
+add_executable(589_NaryTreePreorderTraversal 589_NaryTreePreorderTraversal.cpp)
+add_executable(617_mergeTwoBinaryTrees 617_mergeTwoBinaryTrees.cpp)
+add_executable(665_nonDecreasingArray 665_nonDecreasingArray.cpp)
+
+add_executable(669_trimBinaryTree 669_trimBinaryTree.cpp)
+add_executable(674_longestContIncSubseq 674_longestContIncSubseq.cpp)
+add_executable(703_kthLargestElement 703_kthLargestElement.cpp)
+add_executable(705_designHashSet 705_designHashSet.cpp)
+add_executable(852_peakIndexMountainArray 852_peakIndexMountainArray.cpp)
+add_executable(91160_findWords 91160_findWords.cpp)
+
+add_executable(5_longestPalindromicSubstr 5_longestPalindromicSubstr.cpp)
+
+
 
 
 
