@@ -49,6 +49,14 @@ add_executable(852_peakIndexMountainArray 852_peakIndexMountainArray.cpp)
 add_executable(91160_findWords 91160_findWords.cpp)
 
 add_executable(5_longestPalindromicSubstr 5_longestPalindromicSubstr.cpp)
+add_executable(11_containerWithMostWater 11_containerWithMostWater.cpp)
+add_executable(17_letterCombinationPhonenum 17_letterCombinationPhonenum.cpp)
+add_executable(22_generateParanthesis 22_generateParanthesis.cpp)
+
+add_executable(34_findFirstAndLastPositionInSortedArray 34_findFirstAndLastPositionInSortedArray.cpp)
+add_executable(46_permutations 46_permutations.cpp)
+add_executable(48_rotatedImage 48_rotatedImage.cpp)
+
 
 
 

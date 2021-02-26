@@ -1,0 +1,39 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+ vector<string> letterCombinations(string digits) {
+    vector<string> phone = {"0", "1", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+    if(digits.empty())
+        return {};
+    
+    queue<string> q;
+    vector<string> ans;
+    
+    q.push("");
+
+    while(!q.empty()){
+        string s = q.front();
+        q.pop();
+        
+        if(s.length() == digits.length())
+            ans.push_back(s);
+        else{
+            string temp = phone[digits[s.length()] - '0'];
+            for(auto i : temp)
+                q.push(s + i);
+        }
+    }
+    return ans;
+}
+
+
+int main()
+{
+    string s = "",digits="23";
+    cout<<digits[s.length()]<<endl;
+    cout<<digits[s.length()] - '0';
+    // vector<string> v = letterCombinations(s);
+    // for (auto a : v)
+    //     cout<<a<<" ";
+    // cout<<endl;
+}
