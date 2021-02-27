@@ -55,7 +55,8 @@ add_executable(22_generateParanthesis 22_generateParanthesis.cpp)
 
 add_executable(34_findFirstAndLastPositionInSortedArray 34_findFirstAndLastPositionInSortedArray.cpp)
 add_executable(46_permutations 46_permutations.cpp)
-add_executable(48_rotatedImage 48_rotatedImage.cpp)
+
+add_executable(75_sortColors 75_sortColors.cpp)
 
 
 
