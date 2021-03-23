@@ -60,7 +60,7 @@ add_executable(150_evaluateReversePolishNums 150_evaluateReversePolishNums.cpp)
 add_executable(207_courseSchedule 207_courseSchedule.cpp)
 
 add_executable(test test.cpp)
-
+add_executable(tusimple_q tusimple_q.cpp)
 
 
 
